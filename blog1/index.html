@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Difference Between Document and Window Object</title>
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.6;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #082032;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Difference Between Document and Window Object in HTML</h1>
+    <p>In web development and JavaScript, we often come across terms like Document Object and Window Object.  In this blog, we will explore what each of these objects represents and how they differ from each other.</p>
+                    
+    <table>
+      <tr>
+        <th>Document Object</th>
+        <th>Window Object</th>
+      </tr>
+
+      <tr>
+        <td>The Document object represents a web page that is loaded in the browser. By accessing the document object, we can access the elements in the HTML page and add dynamic content to our web page.</td>
+        <td>The Window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage.</td>
+      </tr>
+      <tr>
+        <tr>
+           <td> <li>Accessing Elements: With the Document object, we can easily access elements such as headings, paragraphs, images, and more using their IDs, classes, or tags.</li>
+            <li>Dynamic Content: We can dynamically modify the content of the web page using JavaScript, such as changing the text, adding or removing elements, and handling events like button clicks.</li>
+            </td>
+        
+            <td>
+                <li>Browser Information: The Window object provides properties like `location`, `navigator`, and `screen` to retrieve information about the browser, such as the current URL, user agent, and screen dimensions.</li>
+                        <li>Global Scope: Any variables or functions declared in the global scope become properties of the Window object, making them accessible throughout the application.</li>
+            </td>
+                    
+        
+    
+    
+    </tr>
+        <td><b>Syntax for property:</b><br>document.property_name;</td>
+        <td><b>Syntax for property:</b><br>window.property_name;</td>
+      </tr>
+      
+    </table>
+  </div>
+</body>
+</html>
